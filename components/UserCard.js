@@ -1,6 +1,16 @@
 class UserCard extends HTMLElement {
   constructor() {
     super();
+
+    this._user = {};
+  }
+
+  set user(value) {
+    this._user = value;
+  }
+
+  get user() {
+    return this._user;
   }
 
   connectedCallback() {
